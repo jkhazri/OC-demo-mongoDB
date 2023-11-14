@@ -4,7 +4,7 @@ metadata:
   name: mongo
 spec:
   serviceName: "mongo"
-  replicas: 3
+  replicas: 3  # change number of replicas if needed
   selector:
     matchLabels:
       app: mongo
@@ -30,7 +30,7 @@ spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
-          storage: 1Gi
+          storage: 1Gi  # change the storage if needed
   volumes:
   - name: config-volume
     configMap:
