@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-configmap
+data:
+  mongo-configdb-keyfile: |
+    YOUR_SECRET_KEY  # make sure to change this with your secrete key file
