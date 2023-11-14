@@ -1,4 +1,4 @@
-# OC-demo-mongoDB
+# demo of MongoDB on the VCluster
 This is a simple demo on how to deploy a MongoDB on K8s.
 you need first to clone the project and move under the  OC-demo-mongoDB folder.
 then run thos command : 
