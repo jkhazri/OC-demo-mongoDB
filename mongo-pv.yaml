@@ -4,11 +4,11 @@ metadata:
   name: mongo-pv
 spec:
   capacity:
-    storage: 1Gi
+    storage: 1Gi # change the storage if needed
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: /path/on/host
+    path: /data/ # change the path of the pv if needed
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -19,4 +19,4 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 1Gi
+      storage: 1Gi  # change the storage if needed
